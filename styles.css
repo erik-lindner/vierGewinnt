@@ -1,0 +1,156 @@
+:root {
+  --maxWidth: 800px;
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  font-family: Helvetica;
+  background-color: #FFD700;
+}
+
+.gridSlideIn {
+  margin: auto;
+  max-width: var(--maxWidth);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 5px;
+  margin-bottom: 1rem;
+  justify-items: center;
+}
+
+.slideInField {
+  column-count: span 1;
+  background-color: lightgrey;
+  /* height: calc((800px - 30px) / 7);
+  width: calc((800px - 30px) / 7); */
+  height: 12vh;
+  width: 12vh;
+  border-radius: 0.5rem;
+  background-color: #FFD700;
+  box-shadow: inset 6px 6px 12px #d9b700, inset -6px -6px 12px #fff700;
+}
+
+.slideInField:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gridFieldWrapper {
+  margin: auto;
+  max-width: var(--maxWidth);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  border-radius: 0.5rem;
+  justify-items: center;
+}
+
+.fieldItem {
+  background-color: lightblue;
+  /* height: calc((800px - 30px) / 7);
+  width: calc((800px - 30px) / 7); */
+  height: 12vh;
+  width: 12vh;
+  column-count: span 1;
+  border-radius: 0.5rem;
+  background-color: #FFD700;
+  box-shadow: 6px 6px 12px #d9b700, -6px -6px 12px #fff700;
+}
+
+.Rot {
+  color: red;
+  text-shadow: 0px 0px 20px red;
+}
+
+.Blau {
+  color: blue;
+  text-shadow: 0px 0px 20px blue;
+}
+
+.playerActiveRed {
+  background-color: red;
+  width: inherit;
+  height: inherit;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.playerActiveBlue {
+  background-color: blue;
+  width: inherit;
+  height: inherit;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  color: white;
+  text-shadow: 0px 0px 10px grey;
+}
+
+.info p {
+  margin: 0;
+}
+
+.info button {
+  font-size: 2rem;
+  padding: 0.3rem 1rem;
+  border-radius: 1em;
+  border: none;
+  cursor: pointer;
+  background-color: #FFD700;
+  box-shadow: 6px 6px 12px #d9b700, -6px -6px 12px #fff700;
+  color: white;
+}
+
+.info button:active {
+  box-shadow: inset 6px 6px 12px #d9b700, inset -6px -6px 12px #fff700;
+}
+
+.playerWon {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerWon p {
+  margin: 0;
+}
+
+.playerWon button {
+  font-size: 2rem;
+  padding: 0.3rem 1rem;
+  border-radius: 1em;
+  border: none;
+  cursor: pointer;
+  background-color: #FFD700;
+  box-shadow: 6px 6px 12px #d9b700, -6px -6px 12px #fff700;
+  color: white;
+}
+
+.playerRed {
+  color: red;
+}
+
+.playerBlue {
+  color: blue;
+}
